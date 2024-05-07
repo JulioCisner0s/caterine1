@@ -1,0 +1,6 @@
+.cart_container > span {
+    color: white;
+    padding: 5px;
+    background-color: rgb(240, 154, 169);
+    border-radius: 50%;
+}

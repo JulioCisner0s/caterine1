@@ -1,0 +1,25 @@
+.category_list{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    gap: 15px;
+    padding-right: 20px;
+}
+
+.category_list li{
+    background-color: #f9f9f9;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.category_list li:hover{
+    background-color: #e1e1e1;
+}
+
+.category_list li a{
+    text-decoration: none;
+    color:rgb(240, 154, 169);
+    font-weight: 500;
+
+}
