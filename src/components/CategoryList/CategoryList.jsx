@@ -5,16 +5,16 @@ function CategoryList () {
     return (
         <ul className="category_list">
             <li>
-                <Link to={"/bodysuits"}>Bodysuits</Link>
+                <Link to={"/category/bodysuits"}>Bodysuits</Link>
             </li>
             <li>
-                <Link to={"/sets"}>Set/Conjuntos</Link>
+                <Link to={"/category/sets"}>Set/Conjuntos</Link>
             </li>
             <li>
-                <Link to={"/curvy"}>Plus size</Link>
+                <Link to={"/category/curvy"}>Plus size</Link>
             </li>
             <li>
-                <Link to={"/accesorios"}>Accesorios</Link>
+                <Link to={"/category/accesorios"}>Accesorios</Link>
             </li>
         </ul>
     )
