@@ -1,8 +1,29 @@
-# React + Vite
+# CATERINE 
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Este proyecto esta creado con Vite JS + React + Firebase + Tailwind CSS
 
-Currently, two official plugins are available:
+### CD
+```bash	
+cd caterine1
+```
+### Instalación
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+```bash
+npm install
+```
+
+### Ejecución
+
+```bash
+npm run dev
+```
+
+#### Colaboradores 
+
+- Profesor: [ Franco Carrizo Dev ](https://github.com/FrancoCarrizoDev/curso-react/commits?author=FrancoCarrizoDev)
+
+- Alumno: [ Julio Cisneros ](https://github.com/JulioCisner0s/caterine1)
+
+### Mas información
+
+[ CoderHouse ] (https://www.coderhouse.com/mx/online/reactjs)

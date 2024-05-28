@@ -1,18 +1,24 @@
-import { useState } from "react";
 import CartIcon from "../CartIcon/CartIcon";
-import "../CartIcon/CartIcon.css"
+import "./CartWidget.css"
+import { Link } from "react-router-dom";
+import { useContext } from "react";
+import CartContext from "../../contexts/CartContext";
 
 
 function CartWidget () {
+    const { cart } = useContext(CartContext);
 
-    const [cartItems, setCartItems] = 
-    useState(5);
+    const calculateQuantity = cart.reduce((acc, item) => acc + item.quantity, 0);
 
     return (
-        <div className="cart_container">
-            <CartIcon ancho={40} alto={40} />
-            <span>{cartItems}</span>
-        </div>
+        <Link to="/cart">
+            <div className="flex items-center cart_container">
+                <CartIcon ancho={40} alto={40} />
+                <span className="rounded-full px-1 text-white bg-amber-400 font-semibold text-sm">
+                    {calculateQuantity}
+                </span>
+            </div>
+        </Link>
     )
 }
 

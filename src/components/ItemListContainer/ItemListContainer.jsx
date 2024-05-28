@@ -1,29 +1,12 @@
 import ItemList from "../ItemList/ItemList"
-import { useState, useEffect } from 'react';
-import { getProducts, getProductByCategory } from "../../mock/asyncMock";
+import useProducts from "../../hooks/useProducts";
 import { useParams } from "react-router-dom";
 function ItemListContainer({saludo}) {
     
-    const[products, setProducts] = useState([]);
-    const[loading, setLoading] = useState(true);
-    const params = useParams();
+    const { categoryName } = useParams();
+    const { isLoading, products } = useProducts(categoryName);
 
-    useEffect(() => {
-        if (params.categoryName) {
-            getProductByCategory(params.categoryName).then((data)=> {    setProducts(data);
-            }).finally(() => {
-                setLoading(false);
-            })
-        } else {
-            getProducts().then((data) => {
-                setProducts(data);
-            }).finally(() => {
-                setLoading(false);
-            });
-        }
-    }, [params.categoryName]);
-
-    if (loading) return <h1>Cargando...</h1>
+    if (isLoading) return <h1>Cargando...</h1>;
 
     return (
         <div>

@@ -1,6 +1,6 @@
 const products = [
     {
-    id: 1,
+    id: "1",
     category: "bodysuits",
     title: "Kelly Body",
     price: 420,
@@ -9,7 +9,7 @@ const products = [
     stock: 3,
     },
     {
-        id: 2,
+        id: "2",
         category: "sets",
         title: "Megara Set",
         price: 445,
@@ -18,7 +18,7 @@ const products = [
         stock: 4,
     },
     {
-        id: 3,
+        id: "3",
         category: "curvy",
         title: "Hug Me Set",
         price: 430,
@@ -27,7 +27,7 @@ const products = [
         stock: 5,
     },
     {
-        id: 4,
+        id: "4",
         category: "accesorios",
         title: "Guantes Largos Princesa",
         price: 199,
@@ -36,7 +36,7 @@ const products = [
         stock: 1,
     },
     {
-        id: 5,
+        id: "5",
         category: "bodysuits",
         title: "Femme Fatale",
         price: 420,
@@ -45,7 +45,7 @@ const products = [
         stock: 0,
     },
     {
-        id: 6,
+        id: "6",
         category: "sets",
         title: "Lara Set",
         price: 420,
@@ -67,13 +67,13 @@ export const getProductById = (id) => {
     return new Promise((resolve) => {
     setTimeout(() => {
         resolve(products.find((product) => product.id === id));
-    }, 2000);
+    }, 1000);
     });
 };
-export const getProductByCategory = (category) => {
+export const getProductsByCategory = (category) => {
     return new Promise((resolve) => {
     setTimeout(() => {
         resolve(products.filter((product) => product.category === category));
-    }, 2000);
+    }, 1000);
     });
 };
